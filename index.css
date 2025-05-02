@@ -4,6 +4,7 @@
   --color-layer-3: #5B3A29;
   --color-primary: #F4C300;
   --color-secondary: #A52A2A;
+  --max-width: 600px;
 }
 
 body {
@@ -45,7 +46,7 @@ nav>ul>li {
 }
 
 section {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(50, 25, 0, 0.04);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
@@ -74,11 +75,14 @@ section>.title {
 .showcase {
   border-radius: 1rem;
   object-fit: cover;
+  aspect-ratio: 2;
+  width: 100%;
+  max-width: var(--max-width);
 }
 
 #root {
-  max-width: 600px;
   margin: auto;
+  max-width: var(--max-width);
 }
 
 #moe {
