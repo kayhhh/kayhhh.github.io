@@ -47,11 +47,14 @@ nav>ul>li {
 section {
   background-color: rgba(0, 0, 0, 0.04);
   border-radius: 1rem;
-  padding: 0 1rem;
+  padding: 1rem;
+  padding-top: 0;
+  margin: 1rem 0;
 }
 
 section>h2 {
   text-align: center;
+  padding-top: 1rem;
 }
 
 .nolink {
@@ -70,7 +73,7 @@ section>h2 {
 }
 
 #root {
-  max-width: 800px;
+  max-width: 600px;
   margin: auto;
 }
 
