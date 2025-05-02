@@ -73,3 +73,9 @@ section>h2 {
   max-width: 800px;
   margin: auto;
 }
+
+#moe {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
