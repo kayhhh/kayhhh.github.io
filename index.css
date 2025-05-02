@@ -1,0 +1,75 @@
+:root {
+  --color-layer-1: #DCA86C;
+  --color-layer-2: #F7E4B9;
+  --color-layer-3: #5B3A29;
+  --color-primary: #F4C300;
+  --color-secondary: #A52A2A;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: var(--color-layer-2);
+  color: var(--color-layer-3);
+}
+
+hr {
+  border-color: var(--color-layer-3);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav>ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+nav>ul>li {
+  text-align: center;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+section>h2 {
+  text-align: center;
+}
+
+.nolink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.horizontal>section {
+  flex: 1;
+}
+
+#root {
+  max-width: 800px;
+  margin: auto;
+}
