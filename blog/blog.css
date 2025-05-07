@@ -1,0 +1,29 @@
+body {
+  padding-bottom: 4rem;
+}
+
+nav {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+}
+
+ol>li {
+  margin-bottom: 1rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 0.5rem;
+}
