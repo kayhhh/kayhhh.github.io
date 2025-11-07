@@ -1,0 +1,15 @@
+title: kayh.dev
+description: Personal website
+url: https://kayh.dev
+baseurl: ""
+
+exclude:
+  - flake.nix
+  - flake.lock
+  - README.md
+  - .envrc
+  - .direnv
+
+keep_files:
+  - images
+  - blog

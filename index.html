@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,35 +7,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kayh.dev</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/nav.css">
 </head>
 
 <body>
   <div id="root">
-    <nav>
-      <h3>kayh.dev</h3>
-
-      <h3 class="center">
-        ⨺
-      </h3>
-
-      <ul>
-        <li>
-          <a href="/">[Home]</a>
-        </li>
-        <li>
-          <a href="/blog">[Blog]</a>
-        </li>
-      </ul>
-    </nav>
-
-    <hr />
+    {% include navbar.html %}
 
     <main>
-      <p><q>Stare into the <a class="nolink" href="images/sun.jpg">sun</a> and what do you see?</q></p>
+      <p><q>Stare into the <a class="nolink" href="/images/sun.jpg">sun</a> and what do you see?</q></p>
 
-      <img class="showcase" src="images/desert.gif" />
+      <img class="showcase" src="/images/desert.gif" />
 
       <section class="horizontal">
         <a href="https://hotlinewebring.club/kayh/previous">[Prev]</a>
@@ -61,4 +46,4 @@
   </div>
 </body>
 
-</htmlj
+</html>

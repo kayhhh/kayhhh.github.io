@@ -19,8 +19,10 @@
         imports = [ inputs.treefmt-nix.flakeModule ];
 
         perSystem =
-          _:
+          { pkgs, ... }:
           {
+            devShells.default = pkgs.mkShell { packages = [ pkgs.jekyll ]; };
+
             treefmt.programs = {
               actionlint.enable = true;
               deadnix.enable = true;
