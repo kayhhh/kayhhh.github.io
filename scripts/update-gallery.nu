@@ -62,17 +62,14 @@ def main [] {
             # Rotate hue so desert colors (tan/yellow ~45°) map to 0°.
             let hue = (($hsl.hue - 45.0 + 360.0) mod 360.0)
 
-            # Create sort key: primary by hue, secondary by saturation (desc), tertiary by lightness.
-            let sort_key = ($hue + ((1.0 - $hsl.saturation) * 0.5) + ($hsl.lightness * 0.2))
-
             print $"  RGB: ($r), ($g), ($b) -> Hue: ($hue | math round -p 1), Sat: ($hsl.saturation | math round -p 2), Light: ($hsl.lightness | math round -p 2)"
 
             {
                 file: $file,
-                sort_key: $sort_key
+                hue: $hue
             }
         }
-        | sort-by sort_key
+        | sort-by hue
     )
 
     print "\nGenerating gallery.html..."
