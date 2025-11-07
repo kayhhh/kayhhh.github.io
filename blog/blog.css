@@ -2,7 +2,7 @@ body {
   padding-bottom: 4rem;
 }
 
-nav {
+.post-meta {
   display: flex;
   height: 3.5rem;
   align-items: center;
@@ -20,10 +20,4 @@ td {
 
 ol>li {
   margin-bottom: 1rem;
-}
-
-img {
-  display: block;
-  margin: auto;
-  border-radius: 0.5rem;
 }

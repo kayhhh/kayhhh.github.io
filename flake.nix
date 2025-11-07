@@ -21,7 +21,13 @@
         perSystem =
           { pkgs, ... }:
           {
-            devShells.default = pkgs.mkShell { packages = [ pkgs.jekyll ]; };
+            devShells.default = pkgs.mkShell {
+              packages = [
+                pkgs.imagemagick
+                pkgs.jekyll
+                pkgs.libwebp
+              ];
+            };
 
             treefmt.programs = {
               actionlint.enable = true;
